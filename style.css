@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #333;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 25px;
+    color: #222;
+}
+
+/* =========================
+   FORMULÁRIO
+   ========================= */
+
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="date"],
+.campo input[type="password"],
+.campo select {
+    width: 100%;
+    max-width: 600px;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    background: white;
+}
+
+.campo input:focus,
+.campo select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.radio-group input,
+.checkbox-group input {
+    margin-right: 5px;
+}
+
+small {
+    display: block;
+    margin-top: 6px;
+    color: #666;
+}
+
+/* =========================
+   BOTÕES DO FORMULÁRIO
+   ========================= */
+
+.botoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.btn-salvar {
+    border: none;
+    padding: 12px 20px;
+    background: #2563eb;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-salvar:hover {
+    background: #1d4ed8;
+}
+
+.btn-limpar {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #6b7280;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-limpar:hover {
+    background: #4b5563;
+}
+
+/* =========================
+   BOTÃO NOVO CADASTRO
+   ========================= */
+
+.btn-novo {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.btn-novo:hover {
+    background: #1d4ed8;
+}
+
+/* =========================
+   LISTA DE USUÁRIOS
+   ========================= */
+
+.lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    color: #2563eb;
+}
+
+.card p {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* =========================
+   BOTÕES EDITAR / EXCLUIR
+   ========================= */
+
+.acoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.acoes a {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-editar {
+    background: #16a34a;
+}
+
+.btn-editar:hover {
+    background: #15803d;
+}
+
+.btn-excluir {
+    background: #dc2626;
+}
+
+.btn-excluir:hover {
+    background: #b91c1c;
+}
+
+/* =========================
+   MENSAGENS
+   ========================= */
+
+.erro {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 12px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.vazio {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
